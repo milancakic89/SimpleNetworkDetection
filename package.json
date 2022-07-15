@@ -1,6 +1,6 @@
 {
   "name": "simple-network-detection",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Detect if the network is online or offline",
   "main": "index.js",
   "scripts": {
