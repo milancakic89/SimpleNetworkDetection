@@ -1,0 +1,23 @@
+{
+  "name": "simple-network-detection",
+  "version": "1.0.0",
+  "description": "Detect if the network is online or offline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milancakic89/SimpleNetworkDetection.git"
+  },
+  "keywords": [
+    "network",
+    "detection"
+  ],
+  "author": "Cakic Milan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milancakic89/SimpleNetworkDetection/issues"
+  },
+  "homepage": "https://github.com/milancakic89/SimpleNetworkDetection#readme"
+}
