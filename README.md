@@ -12,6 +12,8 @@ Then...
 
 import { NetworkDetection } from 'simple-network-detection';
 
+```
+
 ## Config
 
 Once library is imported, you can call NetworkDetection.seconds.set(number), and then subscribe anywhere you want to be notified.
