@@ -45,7 +45,7 @@ SimpleNetworkDetection.prototype.start = function () {
         clearInterval(this.interval)
     }
     this.interval = setInterval(() => {
-        check();
+       this.check();
     }, this.seconds.get() * 1000)
 }
 
@@ -54,10 +54,10 @@ SimpleNetworkDetection.prototype.unsubscribe = function () {
 }
 
 SimpleNetworkDetection.prototype.subscribe = function (fn) {
+    this.observers.push(fn);
     if (this.observers.length) {
         this.start();
     }
-    this.observers.push(fn);
     return fn;
 }
 
@@ -82,5 +82,6 @@ SimpleNetworkDetection.prototype.seconds = (function () {
 })();
 
 const NetworkDetection = new SimpleNetworkDetection();
+NetworkDetection.subscribe(bool => console.log(bool))
 
 module.exports.NetworkDetection = NetworkDetection;
