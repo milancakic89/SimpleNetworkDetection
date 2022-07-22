@@ -82,6 +82,5 @@ SimpleNetworkDetection.prototype.seconds = (function () {
 })();
 
 const NetworkDetection = new SimpleNetworkDetection();
-NetworkDetection.subscribe(bool => console.log(bool))
 
 module.exports.NetworkDetection = NetworkDetection;
